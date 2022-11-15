@@ -1,0 +1,89 @@
+body .section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 64px 0px 0px;
+  margin: 0 auto;
+
+  position: relative;
+  width: 1440px;
+  height: 576px;
+
+  background: #e3cfcf;
+  font-family: "Fira Sans";
+}
+img {
+  display: flex;
+  height: 576px;
+  width: 720px;
+}
+h1 {
+  font-weight: 300;
+  font-size: 32px;
+  margin: 16px 104px;
+}
+p {
+  width: 512px;
+  height: 161px;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 104px;
+}
+
+button {
+  height: 72px;
+  width: 180px;
+  background: #e3cfcf;
+}
+button a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+button .hidden {
+  display: none;
+}
+
+.description {
+  text-align: center;
+}
+@media (max-width: 375px) {
+  body .section {
+    flex-direction: column;
+    width: 375px;
+    height: 100%;
+    padding: 0 0 100px 0;
+  }
+  img {
+    height: 300px;
+    width: 375px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+  }
+  .description {
+    width: 375px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  h1 {
+    font-size: 24px;
+    height: 62px;
+    width: 343px;
+    margin: 36px 16px;
+  }
+  p {
+    font-size: 16px;
+    margin: 36px 16px;
+    width: 343px;
+    height: 189px;
+  }
+}
